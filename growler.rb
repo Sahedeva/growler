@@ -1,3 +1,6 @@
+require 'sinatra'
+require 'sinatra/reloader'
+
 enable :sessions
 
 before do
@@ -15,14 +18,16 @@ get '/add_growl' do
 	erb :add_growl
 end
 
-post '/' do
-	erb :add_growl
+post '/add_growl' do
+	
 	growl = params[:growl]
 	url = "/invalid_growl"
 	if growl.length <= 142
 		session[:roars] << params[:growl]
 		session[:time_stamp] << Time.now.strftime("%m/%d/%Y %H:%M %p")
 	else redirect_to url
+	end
+	erb :view_growls
 end
 
 get '/view_growls' do 
