@@ -17,9 +17,11 @@ end
 
 post '/' do
 	erb :add_growl
-	if logic (length of growl <=142)
-	session[:roars] << params[:growl]
-	session[:time_stamp] << Time.now.strftime("%m/%d/%Y %H:%M %p")
-	else redirect to invalid page
+	growl = params[:growl]
+	url = "/invalid_growl"
+	if growl.length <= 142
+		session[:roars] << params[:growl]
+		session[:time_stamp] << Time.now.strftime("%m/%d/%Y %H:%M %p")
+	else redirect_to url
 end
 
