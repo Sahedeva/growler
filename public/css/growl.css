@@ -1,0 +1,54 @@
+#roars_list {
+	text-align: center;
+	font-weight: bold;
+	list-style-type: none;
+	color:red;
+	text-shadow: 1px 1px 1px white;
+}
+
+#view_img {
+	height:150px;
+	width:150px;
+	border-radius: 5px;
+}
+
+#growl_head {
+	text-align: left;
+	color: beige;
+	text-shadow: 1px 1px 1px black;
+	font-weight: bold;
+}
+
+.footer_button {
+	color: green;
+	text-shadow: 1px 1px 1px black;
+	font-weight: bold;
+}
+
+#roar_head {
+	color: blue;
+	text-shadow: 1px 1px 1px black;
+	text-align: center;
+	font-weight: bold;
+}
+
+#header_title {
+	color: purple;
+	text-shadow: 1px 1px 1px white;
+	text-align: center;
+	font-weight: bold;
+	margin-top: -170px;
+	margin-bottom: 170px;
+}
+
+#header_img {
+	height:200px;
+	width:200px;
+	border-radius: 20px;
+}
+
+body {
+	background-image: url(https://www.thetus.com/img/savanna-hero.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}

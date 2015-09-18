@@ -25,21 +25,19 @@ post '/add_growl' do
 	if growl.length <= 142
 		session[:roars] << params[:growl]
 		session[:time_stamp] << Time.now.strftime("%m/%d/%Y %H:%M %p")
-	else redirect_to url
+		erb :add_growl
+	else 
+		erb :invalid_growl
 	end
-	erb :view_growls
+	
 end
 
 get '/view_growls' do 
-	array_length = session[:roars].length
-	roars = session[:roars]
-	times = session[:time_stamp]
-	for i in 0..array_length
-		p (i+1)
-		p "     "
-		puts times[i]
-		puts roars[i]
-	end
+	@array_length = session[:roars].length
+	@roars = session[:roars]
+	@times = session[:time_stamp]
+
+	erb :view_growls
 end
 
 

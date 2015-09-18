@@ -1,11 +1,16 @@
-
-
-	<img id="invalid_img" src="images/roars_img.jpg">
+<img id="view_img" src="images/roars_img.jpg">
 	
-	<audio autoplay>
-		<source src="sounds/Tiger Growling-SoundBible.com-258880045.mp3" type="audio/mpeg">
-	</audio>
+<audio autoplay>
+	<source src="sounds/Tiger Growling-SoundBible.com-258880045.mp3" type="audio/mpeg">
+</audio>
 
-		<h1 id="invalid_head">Your Total Number of Growls is <%= session[:roars].length  %><br> </h1>
+	<h1 id="roar_head">Your Total Number of Growls is <%= session[:roars].length  %> <br> </h1>
+
+	<ul id="roars_list">
+		<%  for i in 0..@array_length %>
+		<li><%= @times[i] %></li>
+		<li><%= @roars[i] %></li>
+		<% end %>
+	</ul>
 		
 
