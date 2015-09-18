@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #Growler
 
 ##THE GOAL
@@ -70,3 +71,7 @@
 - **BONUSes**
   - Add tagging functionality 
   - Add commenting functionality
+=======
+# growler
+growler friday project
+>>>>>>> b7ba35ade55855c8b1826df527eee0bb274e394f
