@@ -5,6 +5,17 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 	<link rel="stylesheet" type="text/css" href="../css/growl.css">
+	<script src="http://code.jquery.com/jquery-1.5.js"></script>
+    <script>
+      function countChar(val) {
+        var len = val.value.length;
+        if (len >= 142) {
+          val.value = val.value.substring(0, 142);
+        } else {
+          $('#charNum').text(142 - len);
+        }
+      };
+    </script>
 </head>
 <body>
 	<div class="container head">
