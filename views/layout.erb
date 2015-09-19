@@ -2,34 +2,39 @@
 <html>
 <head>
 	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 	<link rel="stylesheet" type="text/css" href="../css/growl.css">
 </head>
 <body>
-	<header>
-
-<img id="header_img" src="images/lion roar.jpg">
-
-<audio autoplay>
-	<source src="sounds/Lion Growling-SoundBible.com-657113062.mp3" type="audio/mpeg">
-</audio>
-
-<h1 id="header_title">Bob's and Justin's Galactic Growler</h1>
-
-
-</header>
-
-	<%= yield %>
-
-<footer>
-
-
-	<nav id="footer_navbar">
-		<a class="footer_button" href="add_growl">Growl</a>
-		<a class="footer_button" href="view_growls">Roars</a>
-	</nav>
-
-
-</footer>	
+	<div class="container head">
+		<header>
+			<div class="row">
+				<div class="col-xs-2">
+					<img id="header_img" src="images/lion roar.jpg">
+					<audio autoplay loop>
+						<source src="sounds/01 - Circle of Life -song.mp3" type="audio/mpeg">
+					</audio>
+				</div>
+				<div class="col-xs-10">
+					<h2 id="header_title">Bob's and Justin's Galactic Growler</h2>
+				</div>
+			</div>
+		</header>
+	</div>
+	<div class="container content">
+		<%= yield %>
+  </div>
+	<div class="container foot">
+		<footer>
+			<div class="col-12-xs">
+				<nav id="footer_navbar">
+					<a class="footer_button" href="add_growl">Growl</a>
+					<a class="footer_button" href="view_growls">Roars</a>
+				</nav>
+			</div>
+		</footer>	
+	</div>
 
 </body>
 </html>

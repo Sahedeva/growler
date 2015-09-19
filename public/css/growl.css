@@ -1,54 +1,84 @@
 #roars_list {
-	text-align: center;
+	text-align: left;
 	font-weight: bold;
 	list-style-type: none;
 	color:red;
-	text-shadow: 1px 1px 1px white;
+	height: 225px;
+	overflow: auto;
+	text-shadow: 1px 1px 1px black;
 }
 
 #view_img {
-	height:150px;
-	width:150px;
+	height:100px;
+	width:172px;
 	border-radius: 5px;
 }
 
 #growl_head {
-	text-align: left;
+	text-align: center;
 	color: beige;
 	text-shadow: 1px 1px 1px black;
 	font-weight: bold;
 }
 
+#growl {
+	border-radius: 5px;
+	color:red;
+}
+
+#roar {
+	border-radius: 5px;
+	background-image: url("http://vignette1.wikia.nocookie.net/thelionkingfanon/images/d/d9/Rafiki's_Drawing_of_Simba.jpg/revision/latest?cb=20091214204442");
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: rgba(250, 250, 17, 0.25);
+}
+
+#footer_navbar {
+	text-align: center;
+}
+
 .footer_button {
 	color: green;
-	text-shadow: 1px 1px 1px black;
+	font-size: 17px;
+	text-shadow: 1px 1px 1px white;
 	font-weight: bold;
+	padding-left: 25px;
+	padding-right: 25px;
 }
 
 #roar_head {
 	color: blue;
 	text-shadow: 1px 1px 1px black;
-	text-align: center;
+	text-align: left;
 	font-weight: bold;
 }
 
 #header_title {
 	color: purple;
 	text-shadow: 1px 1px 1px white;
-	text-align: center;
+	text-align: left;
 	font-weight: bold;
-	margin-top: -170px;
-	margin-bottom: 170px;
+}
+
+.list {
+	height:200px;
 }
 
 #header_img {
-	height:200px;
-	width:200px;
+	height:100px;
+	width:100px;
 	border-radius: 20px;
+	display: inline-block;
 }
 
 body {
+	background-color: black;
+}
+
+.content {
+	height:300px;
 	background-image: url(https://www.thetus.com/img/savanna-hero.jpg);
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 100% 100%;
 }

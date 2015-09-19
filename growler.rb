@@ -33,7 +33,7 @@ post '/add_growl' do
 end
 
 get '/view_growls' do 
-	@array_length = session[:roars].length
+	@array_length = session[:roars].length - 1
 	@roars = session[:roars]
 	@times = session[:time_stamp]
 
